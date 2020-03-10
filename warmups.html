@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--       <script>&ndash;&gt;-->
+<!--        console.log("hello!");-->
+
+<!--        function helloWorld() {-->
+<!--            return "Hello World!";-->
+<!--        }-->
+
+<!--        console.log(helloWorld()); //long way to do it -->
+<!--        //(.log then tab) is the shortcut to console log anything-->
+<!--        </script>-->
+
+    <script>
+        function quotent(num1, num2) {
+            return num1 / num2;
+        }
+        console.log(quotent(3, 2));
+    </script>
+
+<!--/* write a function called calculateRectangleArea that accepts a length and width, and returns the area */-->
+    <script>
+    function calculateRectangleArea(length, width) {
+        return length * width;
+    }
+    console.log(calculateRectangleArea(2, 2));
+    </script>
+
+<!--//Write a function called arrayLength that accepts an array and returns the length of that array.-->
+<!--// arrayLength([1,2,3,4]) 	=> returns 4-->
+<script>
+    function arrayLength(arrayInput) {
+    return arrayInput.length;
+    }
+    console.log(arrayLength([1, 2, 3, 4]));
+    console.log(arrayLength(["dog", "cat", "fish", "bird", "fox"]));
+
+    /* write a function that returns the number: 7 */
+    function number() {
+    return 7;
+    }
+    console.log(number());
+</script>
+<!--function that returns the first Item in an Array-->
+<script>
+    //  function firstItem(inputArray) {
+    //      return inputArray [0]
+    //  }
+    //  console.log(firstItem(["dog", "cat", "fish", "bird", "fox"]));
+    //  console.log(firstItem([1, 2, 3, 4])); //returns 1
+    //
+    // <!--functions must always have a return -->
+    //
+    // // write a function called determineType that accepts a single input, and returns the type of data that is input //
+    // function    determineType(input) {
+    //     return typeof input; <!-- typeof returns type of data once called / can be used for comparisons, debugging, be able to perform specific logic/ data type checking-->
+    // }
+    //     console.log(determineType(7));
+    //     console.log(determineType(true));
+    //     console.log(determineType("hello"));
+    //
+    //     // Function //
+    //  // Write a function that returns true or false based off whether the number passed, squared, is evenly divisible by 3.//
+    //
+    // function squaredNumDivisibleByThree (num) {
+    //     return (num * num) %3 === 0;
+    // }
+    // console.log(squaredNumDivisibleByThree(3));
+    // console.log(squaredNumDivisibleByThree(7));
+
+    // Write a function called isString that accepts a single input, and returns true if the data type is a string or false if it is not a string.
+
+    function isString(input) {
+        return typeof input === "string"; // for data checking you want to use typeof
+    }
+    console.log(isString(true));
+    console.log(isString("hello"));
+
+    // Loop through the following array of Reindeer objects and return an array of Reindeer objects that are "gold" reindeer
+    var reindeerList = [
+        {
+            name: "Dot",
+            age: 5,
+            isGold: false
+        },
+        {
+            name: "Dasher",
+            age: 8,
+            isGold: true
+        },
+        {
+            name: "Patch",
+            age: 2,
+            isGold: false
+        },
+        {
+            name: "Rocket",
+            age: 6,
+            isGold: false
+        },
+        {
+            name: "Dancer",
+            age: 9,
+            isGold: true
+        },
+        {
+            name: "Prancer",
+            age: 5,
+            isGold: true
+        },
+        {
+            name: "Groot",
+            age: 9,
+            isGold: false
+        },
+        {
+            name: "Vixen",
+            age: 9,
+            isGold: true
+        },
+        {
+            name: "Comet",
+            age: 11,
+            isGold: true
+        },
+        {
+            name: "Archie",
+            age: 3,
+            isGold: false
+        },
+        {
+            name: "Cupid",
+            age: 13,
+            isGold: true
+        },
+        {
+            name: "Donder",
+            age: 16,
+            isGold: true
+        },
+        {
+            name: "Boots",
+            age: 16,
+            isGold: false
+        },
+        {
+            name: "Blizten",
+            age: 16,
+            isGold: true
+        }
+    ];
+
+    // loop through the array and log the values
+
+    //For Loop is if you need to skip over items in the array **** For Arrays Only ****
+    //whenever you need to return an array you need an empty bucket(empty array) to store what you need in it
+
+    // function getGoldReindeer(reindeerArray) {
+    //         var bucket = [];//empty bucket needed to store your output
+    //         for(var i = 0; i < reindeerArray.length; i++){//
+    //             if (reindeerArray[i].isGold === true){// reindeerArray is what you are itterating through [i] is all the elements in that array to go through .isGold is what you are looking for in that array and measuring if it is true.
+    //                 bucket.push(reindeerArray[i]);
+    //             }
+    //         }
+    //         return bucket;
+    // }
+    //     console.log(getGoldReindeer(reindeerList));
+    //
+    //
+    // //forEach.loop ex://iterates through everything in an array **** For Arrays only ****
+    //
+    // function getGoldReindeer(reindeerArray){
+    //     var bucket = [];
+    //     reindeerArray.forEach(function (reindeer) {//the .forEach it
+    //         if(reindeer.isGold === true){//if this condition is true then
+    //             bucket.push(reindeer);//push into this bucket
+    //         }
+    //
+    //     })
+    // }
+    // Write a function that returns a message that says hello to someone by accessing the name property of a passed object. If the passed
+    // argument's name property is anything but a string, or the argument is not an object, return "Hello, my dudes!"
+
+    // function sayHello(){
+    //     if(typeof obj === "object" && typeof obj.name === "string") {// works with just typeof obj.name === "string"
+    //         return "Hello, " + obj.name + "1";
+    //     }else{
+    //         return "Hello, my dudes!";
+    //     }
+    //
+    //
+    //
+    //
+    // console.log(helloToObject({name: "Otis"}));
+    // console.log(helloToObject({name: {firstName: "Milo", lastName: "Chatran"}}));
+    // console.log(helloToObject(7));
+    // console.log(helloToObject([1, 2, 3]));
+    //
+    // })
+</script>
+</body>
+</html>

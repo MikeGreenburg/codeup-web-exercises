@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+    font-family: monospace;
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+    font-family: monospace;
+    margin: 0;
+}
+
+.h3 {
+    font-size: 1em;
+}
+
+.h2 {
+    font-size: 3em;
+}
+
+.p, .a {
+    font-family: "Comic Sans MS", serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-areas:
+    "header header header"
+    "menu content ads"
+    "menu content ads"
+    "menu content ads"
+    "menu index ."
+    "menu footer footer"
+    "menu citation citation";
+    grid-gap: 2em;
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+    flex-direction: column;
+    background-color: #111111;
+    color: #DDDDDD;
+}
+
+.menu {
+    grid-area: menu;
+    display: grid;
+    background-color: #96A8AE;
+    color: #111111;
+}
+
+.content {
+    grid-area: content;
+    display: grid;
+}
+
+.ads {
+    grid-area: ads;
+    display: grid;
+    border: 1px solid black;
+}
+
+
+.citation {
+    grid-area: citation;
+    display: grid;
+    background-color: #111111;
+    color: #DDDDDD;
+}
+
+footer {
+    grid-area: footer;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    background-color: #96A8AE;
+    color: #DDDDDD;
+}
+
+.index {
+        grid-area: index;
+        content: counter(page) " of " counter(pages);
+        display: flex;
+        justify-content: center;
+    }
+

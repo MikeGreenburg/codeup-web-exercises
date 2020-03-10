@@ -1,0 +1,21 @@
+h1 {
+    font-weight: bold;
+}
+
+#container1 {
+    font-weight: normal;
+    float: right;
+}
+
+#container2 {
+    font-family: 'Amiri', serif;
+    text-align-last: center;
+}
+
+#container2 {
+    text-align: center;
+}
+
+#container3 {
+
+}

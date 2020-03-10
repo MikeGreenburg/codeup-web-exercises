@@ -1,0 +1,52 @@
+.fancy-header {
+    color: #96A8AE; /* single line comment */
+    text-decoration: underline;
+}
+/* header styling */
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #96A8AE;
+    text-decoration: underline;
+}
+
+/* body styling */
+body {
+    background-color: #457792;
+    background-image: url("../img/abstract-of-grey-geometric-patterns-background-vector-20639615.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* lists styling */
+ol { list-style: armenian; }
+
+ul { list-style-type: -moz-trad-chinese-formal; }
+
+* {
+    font-family: 'Zhi Mang Xing', cursive;
+}
+
+/* table styling */
+table, td, tr {
+    border-style: inset ;
+}
+
+/* link styling */
+a:link {
+    color: darkseagreen;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: purple;
+}

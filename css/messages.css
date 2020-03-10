@@ -1,0 +1,85 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+    /*--text-info: rgb(73, 67, 159);*/
+    /*--bg-info: rgb(205,222, 255);*/
+    /*--text-success: #00622a;*/
+    /*--bg-success: #cff3da;*/
+    /*--text-warning: #a49946;*/
+    /*--bg-warning: #fbfbdb;*/
+    /*--error-success: rgb(142, 0, 7);*/
+    /*--bg-error: #fff0f5;*/
+}
+
+#container1 {
+    border: 1px solid grey;
+    height: max-content;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    background-color: skyblue;
+    color: blue;
+
+} /* solid, black border of 1px thickness */
+
+#container2 {
+    border: 1px solid grey;
+    height: max-content;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    background-color: lightgreen;
+    color: green;
+}
+
+#container3 {
+    border: 1px solid grey;
+    height: max-content;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    background-color: lightyellow;
+    color: orange;
+}
+
+#container4 {
+    border: 1px solid grey;
+    height: max-content;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    background-color: pink;
+    color: red;
+}
+
+/*.message {*/
+/*    border: 1px solid lightgrey;*/
+/*    border-radius: 5px;*/
+/*    padding: .5em;*/
+/*    margin: .25em;*/
+/*}*/
+
+/*.message-info {*/
+/*    background: rgb(205, 222, 255);*/ /* background:(--text-info); */
+/*    color: rgb(75, 67, 159);*/        /* color: (--bg-info); */
+/*}*/
+
+/*.message-success {*/
+/*    background: #cff3da;*/
+/*    color: #00622a;*/
+/*}*/
+
+/*.message-warning {*/
+/*    background: #fbfbdb;*/
+/*    color: #a49946;*/
+/*}*/
+
+/*.message-error {*/
+/*    background: #fff0f5;*/
+/*    color: rgb(142, 0, 7);*/
+/*}
+
+better way to accomplish this task without adding id's to the html document*/

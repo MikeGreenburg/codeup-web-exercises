@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Crash Course | Selectors</title>
+    <style>
+        body{
+            font-size: 17px;
+            font-family: arial;
+            background: #ff4f4;
+            line-height: 1.5em;
+        }
+        header{
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000 solid;
+            margin-bottom: 10px;
+        }
+        #container{
+            width: 90%;
+            margin: auto;
+            padding: 10%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>jQuery Crash Course</h1>
+    </header>
+    <div id="container">
+    <h1 id="heading1">Heading One</h1>
+        <p id="para1"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda consectetur, deleniti dolorum eligendi et inventore labore mollitia neque nulla obcaecati, provident quas quod, repudiandae voluptatem. Maiores omnis repellat vero.</span><span>Cupiditate rem sapiente sunt ut velit. Alias at commodi dolorum eum excepturi ipsum, maxime molestias, praesentium quae recusandae saepe sint suscipit velit. Facilis iusto molestias odit quis totam? Aperiam, vitae.</span></p>
+
+        <h1 class="heading2">Heading Two</h1>
+        <p id="para1"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda consectetur, deleniti dolorum eligendi et inventore labore mollitia neque nulla obcaecati, provident quas quod, repudiandae voluptatem. Maiores omnis repellat vero.</span><span>Cupiditate rem sapiente sunt ut velit. Alias at commodi dolorum eum excepturi ipsum, maxime molestias, praesentium quae recusandae saepe sint suscipit velit. Facilis iusto molestias odit quis totam? Aperiam, vitae.</span></p>
+    </div>
+
+    <script>
+        $("h1").hide();//targets all h1's and hides them
+        $("h1#heading1").hide();// only selects the 1st heading and hides it
+        $("h1.heading").hide();// grabs heading2 by class and hides it can also be written as $(".heading2").hide();
+        $("p span").css("color", "red");//changes all the spans within the paragraph turns them red any spans outside the paragraph will not turn red.
+        $("span").css("color", "red");// all spans no matter where they are will turn red
+
+
+    </script>
+<script src="js/jquery-2.2.4.js"></script>
+</body>
+</html>

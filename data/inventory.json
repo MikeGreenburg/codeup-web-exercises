@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Hammer",
+    "quantity": 25,
+    "categories": [
+      "tool"
+    ],
+    "price": 20
+  }, {
+  "title": "Drill",
+  "quantity": 5,
+  "categories": [
+    "tool",
+    "powered"
+  ],
+  "price": 100
+}, {
+  "title": "Mower",
+  "quantity": 5,
+  "categories": [
+    "tool",
+    "gas",
+    "outdoor"
+  ],
+  "price": 200
+}, {
+  "title": "Screwdrivers",
+  "quantity": 25,
+  "categories": [
+    "tool"
+  ],
+  "price": 10
+},
+  {
+    "title": "Feet of Flightline",
+    "quantity": 50,
+    "categories": [
+      "Army"
+      ],
+    "price": "8"
+  },
+  {
+    "title": "Male Fallopian Tubes",
+    "quantity": 3,
+    "categories": [
+      "Army"
+      ],
+    "price": 8
+  },
+  {
+    "title": "Box of Grid Squares",
+    "quantity": 2,
+    "categories": [
+      "Army"
+    ],
+    "price": 8
+  },
+  {
+    "title": "Tactical Caffeine Transfer Unit",
+    "quantity": 1,
+    "categories": [
+      "Army"
+    ],
+    "price": 8
+  }
+]

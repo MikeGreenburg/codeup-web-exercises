@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    padding: 0em;
+    margin: 0em;
+}
+main {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(10, 1fr) ;
+    grid-template-rows: repeat(12, 1fr);
+    height: 100vh;
+    width: 100vw;
+    font-size: 1em;
+}
+
+.cell-1 {
+    grid-area: 1/ 1/ 3/ 11;
+    background: #fcd800;
+    border-radius: .2em;
+}
+.cell-2 {
+    grid-area: 3/ 1/ 13/ 3;
+    background: #fcd800;
+    border-radius: .2em;
+}
+.cell-3 {
+    grid-area: 3/ 9/ 11/ 3;
+    background: #fcd800;
+    border-radius: .2em;
+}
+.cell-4 {
+    grid-area: 3/ 9/ 11/ 11;
+    background: #fcd800;
+    border-radius: .2em;
+}
+.cell-5 {
+    grid-area: 11/ 3/ 13/ 11;
+    background: #fcd800;
+    border-radius: .2em;
+}
+
+main div {
+    font-size: 2em;
+    color: black;
+    background: grey;
+    display: flex;
+    justify-content: flex-start;
+}

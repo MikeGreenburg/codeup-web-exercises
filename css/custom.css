@@ -1,0 +1,46 @@
+* {
+    display: grid;
+}
+
+#main-jumbotron {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%), url("../img/pizza.png");
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+}
+
+#jumbotron-container {
+    justify-content: center;
+    color: #111111;
+    text-align: center;
+}
+
+.embed-responsive .card-img-top {
+    object-fit: cover;
+}
+
+#crustsize {
+    background-color: cornflowerblue;
+    color: #DDDDDD;
+}
+
+#pizzaworld {
+    display: flex;
+    background-color: #DDDDDD;
+    opacity: 38%;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.words {
+    padding: 1.5em;
+}
+
+#next\ button{
+    display: flex;
+    margin-left: 60em;
+    justify-content: center;
+
+
+}

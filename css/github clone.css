@@ -1,0 +1,35 @@
+/* Adds a black background color to the top navigation */
+.topnav {
+    background-color: #111;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: darkgray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* floats logo to top left */
+img {
+    float: left;
+}
+
+.btn-group button {
+    background-color: white;
+    color: grey;
+    border: 2px solid grey;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+}
+
+table, th {
+    border: 1px white;
+    border-collapse: collapse;
+}

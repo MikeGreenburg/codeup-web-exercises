@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="killer">Konami Code</h1>
+<img id="contra" src="img/Contrastart.png" alt="">
+
+<script src="js/jquery-2.2.4.js"></script>
+<script type="text/javascript">
+    "use strict";
+
+    $(document).ready(function(){
+
+        var keys = {
+            13: 'Enter',
+            37: 'ArrowLeft',
+            38: 'ArrowUp',
+            39: 'ArrowRight',
+            40: 'ArrowDown',
+            65: 'a',
+            66: 'b'
+        };
+
+        var konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a', 'Enter'];
+        var userInput = 0;
+        $('backgroundImage').html('contra');
+        // $('#contra').css('background-size', '100px 100px');
+        document.addEventListener('keydown', function (e) {
+
+            var key = keys[e.keyCode];
+            var requiredKey = konamiCode[userInput];
+
+            if (key === requiredKey) {
+                userInput++;
+                if (userInput === konamiCode.length) {
+                    activateCheats();
+                    userInput = 0;
+                }
+            } else {
+                userInput = 0;
+            }
+        });
+        function activateCheats() {
+            // $('body').css();
+
+            $('h1').html("You Have 30 Extra Lives");
+
+            // $('body').css('background-size', '100px 100px');
+
+            // var audio = new audio( directory/download .mp3);
+            // audio.play();
+        }
+    });
+</body>
+</html>

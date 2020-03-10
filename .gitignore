@@ -1,0 +1,13 @@
+.idea/*
+*.iml
+.DS_STORE
+*1stAssessmentpractice.html
+*1stAssessmentpractice.js
+<<<<<<< HEAD
+js/keys.js
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9ZdqhLIlxZzV5EHoqvPJZcoHa5DSeZj8&callback=initMap">
+</script>
+=======
+js/keys.js
+>>>>>>> 114a0adf74dd5ae6e21fcb80eae159986a1c5f33
