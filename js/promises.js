@@ -85,11 +85,11 @@
 
 // var token = "b48c101eb866a02cdef2f9763282b3e9564e3578";
 
-fetch('https://cors-anywhere.herokuapp.com/https://api.github.com/users/MikeGreenburg/events', {headers: {'Authorization': gitHubKey}})
+fetch('https://cors-anywhere.herokuapp.com/https://api.github.com/users/MikeGreenburg/events', {headers: {'Authorization': gitHubKey}})//this is the core of the fetch request
     .then(response => {
-        return response.json();
+        return response.json();//returns the response into a json object
     })
-    .then(jsonResponse => {
+    .then(jsonResponse => {//this returns the json response data at the specified location .created_at is the time portion within the payload section of the json object.
         return console.log(new Date(jsonResponse[0].created_at));
     });
 
