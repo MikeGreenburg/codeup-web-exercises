@@ -4,7 +4,7 @@
 let skilledProfs = users.filter(user => user.languages.length >= 3);
 //     Use .map to create an array of strings where each element is a user's email address
  let emailAddies = users.map(user => user.email);
- console.log(emailAddies;)
+ console.log(emailAddies);
 // Use .reduce to get the total years of experience from the list of users. Once you get the total of years you can use the result to calculate the average.
 let totalExpYears = users.reduce((total, user) => total + user.yearsOfExperience, 0);
  console.log("Average years of experience: ");
