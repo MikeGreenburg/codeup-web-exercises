@@ -90,7 +90,7 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.github.com/users/MikeGree
         return response.json();//returns the response into a json object
     })
     .then(jsonResponse => {//this returns the json response data at the specified location .created_at is the time portion within the payload section of the json object.
-        return console.log(new Date(jsonResponse[0].created_at));
+        return console.log(new Date(jsonResponse[0].created_at));// could also 
     });
 
 
