@@ -2,11 +2,12 @@
 //     really useful when you need to use an annoymous function or when using functions that have no name such as passing a function to another function
 
 // 1.
-function sum(a, b) {
-    return a + b;
-}
+// function sum(a, b) {
+//     return a + b;
+// }
 //
-let sum = (a, b) => a + b;
+// let sum = (a, b) => a + b;
+// console.log(sum(2, 5));
 
 // breakdown
 
@@ -15,7 +16,7 @@ let sum = (a, b) => a + b;
 //  return a + b;
 // }
 //
-// - sum(a, b) gets turned into a varible using let keyword
+// - sum(a, b) gets turned into a variable using let keyword
 // let sum = (a, b) {
 //  return a + b;
 // }
@@ -28,7 +29,7 @@ let sum = (a, b) => a + b;
 // - *{} remove curly braces because they are not needed in => notation // this is optional but mostly used to shorten notation
 // let sum = (a, b)
 //
-// - => get put in to denote that it is infact a function and we put the function syntax inside the {}
+// - => get put in to denote that it is in fact a function and we put the function syntax inside the {}
 // let sum = (a, b) => {
 //     return a + b;
 // };
@@ -39,11 +40,12 @@ let sum = (a, b) => a + b;
 // - it is just assumed that whatever comes after => is going to be returned from the function
 
 // 2.
-function isPositive(number) {
-    return number >= 0;
-}
+// function isPositive(number) {
+//     return number >= 0;
+// }
 //
-let isPositive = number => number >= 0;
+// let isPositive = number => number >= 2;
+// console.log(isPositive(1));
 
 //breakdown
 
@@ -66,11 +68,12 @@ let isPositive = number => number >= 0;
 //  let isPositive = number => number >= 0;
 
 // 3.
-function randomNumber() {
-    return Math.random();
-}
+// function randomNumber() {
+//     return Math.random();
+// }
 //
-let randomNumber = () => Math.random();
+// let randomNumber = () => Math.random();
+// console.log(randomNumber());
 
 //breakdown
 
@@ -90,11 +93,11 @@ let randomNumber = () => Math.random();
 // () remain empty for a function with no parameters defined
 
 // 4.
-document.addEventListener('click', function() {
-    console.log('click');
-});
+// document.addEventListener('click', function() {
+//     console.log('click');
+// });
 //
-document.addEventListener('click', () => console.log('click'));
+// document.addEventListener('click', () => console.log('click'));
 
 
 //breakdown
@@ -117,27 +120,27 @@ document.addEventListener('click', () => console.log('click'));
 
 // Using this and => notation
 
-class Person {
-    constructor(name) {
-        this.name = name
-    }
-
-    printNameArrow() {
-        setTimeout(() => {
-            console.log('Arrow: ' + this.name)
-        }, 100)
-    }
-
-    printNameFunction() {
-        setTimeout(fucntion() {
-            console.log('Function: ' + this.name)
-        }, 100)
-    }
-}
-
-let person = new Person('Henry');
-person.printNameArrow();
-person.printNameFunction();
+// class Person {
+//     constructor(name) {
+//         this.name = name
+//     }
+//
+//     printNameArrow() {
+//         setTimeout(() => {
+//             console.log('Arrow: ' + this.name)
+//         }, 100)
+//     }
+//
+//     printNameFunction() {
+//         setTimeout(function() {
+//             console.log('Function: ' + this.name)
+//         }, 100)
+//     }
+// }
+//
+// let person = new Person('Henry');
+// person.printNameArrow();
+// person.printNameFunction();
 
 // breakdown
 //

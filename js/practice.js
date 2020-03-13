@@ -227,4 +227,50 @@ washCars(cars);
 //              }
 //          ]
 
+const {getBooks, postBooks
+
+
+}
+
+// method: 'PUT' is literally going to put in whatever you request
+// method: "PATCH'
+
+getBooks: () => {
+    return fetch( 'api/books')
+        .then(response => response.json());
+},
+    postBook: (book) => {
+    return fetch('api/movies', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(book)
+    })
+        .then(response => response.json());
+},
+    editMovies: (id, book) => {
+    return fetch(`api/movies/${id}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: json.stringify(book)
+    })
+        .then(response => resopnse.json());
+},
+
+    deleteBook: (id) => {// a delete is final so we want a confirm
+    return fetch(`api/books/${id}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    })
+        .then(response => response.json());
+    }
+};
+
+
+
     // ```
