@@ -3,7 +3,7 @@
 
 //Numeric Array
 // Name       Array Values
-arrayName = [1, 2, 3, 4, 5]; //Numeric Arrays have numeric keys. The numeric keys are automatically created for all values specified in an array.
+// arrayName = [1, 2, 3, 4, 5]; //Numeric Arrays have numeric keys. The numeric keys are automatically created for all values specified in an array.
           // 0, 1, 2, 3, 4
             // Array Keys
 

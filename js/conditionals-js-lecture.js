@@ -203,20 +203,20 @@ function checkWeather(weather) {
 
 
 //TODO: Write a function that accepts a string that is a traffic light color as an input. When this function is called, it should return a message informing the user what to do when approaching that color light at an intersection.
-// function checkTrafficLight(lightColor) {
-//     if(lightColor === "red") {
-//         return "stop";
-//     } else if(lightColor === "yellow") {
-//         return "slow";
-//     } else if(lightColor === "green") {
-//         return "Go";
-//     } else {
-//         return "Proceed with caution";
-//     }
-// }
-//
-// console.log(checkTrafficLight("blinking"));
-// console.log(checkWeather("raining"));
+function checkTrafficLight(lightColor) {
+    if(lightColor === "red") {
+        return "stop";
+    } else if(lightColor === "yellow") {
+        return "slow";
+    } else if(lightColor === "green") {
+        return "Go";
+    } else {
+        return "Proceed with caution";
+    }
+}
+
+console.log(checkTrafficLight("blinking"));
+console.log(checkWeather("raining"));
 
 
 // ================ NESTED STATEMENTS ===============
@@ -250,32 +250,32 @@ if (userAge < 15) {
 
 //TODO Together: Regular way
 
-// var message;
-// var success = true;
-//
-// if (success) {
-//     message = "Operation was successful.";
-// } else {
-//     message = "Oops, something went wrong.";
-// }
-// console.log(message);
+var message;
+var success = true;
+
+if (success) {
+    message = "Operation was successful.";
+} else {
+    message = "Oops, something went wrong.";
+}
+console.log(message);
 
 
-// var success = true;
-// var message = (success) ? "Operation was successful from tern." : "Oops, something went wrong from tern.";
-// console.log(message)
+var success = true;
+var message = (success) ? "Operation was successful from tern." : "Oops, something went wrong from tern.";
+console.log(message)
 
 
 //TODO: Refactor the following conditional as a ternary
 
-// var weather = "sunny";
-// var weatherMessage;
+var weather = "sunny";
+var weatherMessage;
 
-// if(weather === "rainy"){
-//    weatherMessage = "It's raining!";
-// } else {
-//     weatherMessage = "Have a nice day!";
-// }
+if(weather === "rainy"){
+   weatherMessage = "It's raining!";
+} else {
+    weatherMessage = "Have a nice day!";
+}
 
 //WRITE YOUR TERNARY STATEMENT HERE!
 
@@ -320,19 +320,19 @@ function pizzaMessage(pizzaPreference) {
 
 
 
-// var pizzaPreference = prompt("What kind of pizza do you like?");
-//
-// switch(pizzaPreference) {
-//     case "pineapple and hot sauce":
-//         alert("What a coincidence, that's my favorite!");
-//         break;
-//     case "cheese":
-//         alert("Just plain cheese? Okay...");
-//         break;
-//     default:
-//         alert(pizzaPreference + " isn't my favorite, but let's order some!");
-//         break;
-// }
+var pizzaPreference = prompt("What kind of pizza do you like?");
+
+switch(pizzaPreference) {
+    case "pineapple and hot sauce":
+        alert("What a coincidence, that's my favorite!");
+        break;
+    case "cheese":
+        alert("Just plain cheese? Okay...");
+        break;
+    default:
+        alert(pizzaPreference + " isn't my favorite, but let's order some!");
+        break;
+}
 
 
 //TODO: Write a switch statement that evaluates weather as the condition. Check for "rainy", "sunny", "snow", and a default case.
