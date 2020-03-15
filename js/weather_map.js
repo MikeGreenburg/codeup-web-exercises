@@ -1,5 +1,4 @@
 "use strict";
-<<<<<<< HEAD
 
 //------------- alternate styled map-----------------------------//
 
@@ -96,7 +95,7 @@
 // }
 // konamiCode();
 // Associate the styled map with the MapTypeId and set it to display.
-=======
+
 $(document).ready(function() {
     $.get("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/"+ darkSkyKey + "/29.4241,-98.4936");
     $.get("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/39fcbf9abb9b85b22991f38b945d8297/29.423161,-98.484513").done(function(data) {
@@ -155,4 +154,4 @@ $(document).ready(function() {
     //-------------------------Geolocation Control------------------------------//
 
 });
->>>>>>> 114a0adf74dd5ae6e21fcb80eae159986a1c5f33
+
