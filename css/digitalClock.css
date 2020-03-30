@@ -1,0 +1,16 @@
+* {
+    padding: 0; /* used to */
+    margin: 0;  /* used to */
+    box-sizing: border-box;   /* used to add padding and border to the padding itself so you dont have to calculate it yourself */
+}
+
+body {
+    background: #96A8AE;  /* used to add background color */
+}
+
+.main {
+    background: #3B94D9;   /* used to give the .main class a background color */
+    width: 400px;   /* used to */
+    margin: 0 auto;    /* used to */
+    height: 175px;   /* used to */
+}
