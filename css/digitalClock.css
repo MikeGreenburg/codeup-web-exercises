@@ -1,16 +1,43 @@
 * {
     padding: 0; /* used to */
     margin: 0;  /* used to */
-    box-sizing: border-box;   /* used to add padding and border to the padding itself so you dont have to calculate it yourself */
+    box-sizing: border-box;   /* used to add padding and border to the width itself so you dont have to calculate it yourself */
 }
 
 body {
     background: #96A8AE;  /* used to add background color */
 }
 
+
+/* main div style */
+
 .main {
     background: #3B94D9;   /* used to give the .main class a background color */
-    width: 400px;   /* used to */
-    margin: 0 auto;    /* used to */
-    height: 175px;   /* used to */
+    width: 400px;   /* used to set the width*/
+    margin: 100px auto;    /* used to center the .main div, can use margin: auto to control the x axis 100px is used to bring it down from the top of the page */
+    height: 175px;   /* used to set the height of the .main container */
+    position: relative; /* positions element relatively to where it would have started to begin with if it was not positioned and moves from that location */
+    padding: 30px; /* gives us space between the main text and the border */
+}
+
+/* badge div style */
+
+.badge {
+    background: #28a745; /* sets the background color of the badge */
+    color: white; /* sets the text color in the badge */
+    padding: 5px 10px; /* sets the size both vertically and horizontally for the badge */
+    font-family: sans-serif; /* sets the font type for the badge lettering */
+    font-weight: bold; /* sets the font weight to bold to make text to stand out */
+    width: 96px; /* used to limit the width of the badge */
+    position: absolute; /* puts the element absolute to the nearest parent that is not statically (no position or position: static) positioned, think top: 0px left: 0px would put the element in the top left corner of the webpage */ /* starts from the parent divs top left corner so that when the browser is resized it stays the same */
+    top: -15px; /* is used to help position the badge while using the absolute position */
+    left: 40%; /* is used to help position the badge while using the absolute position */
+}
+
+.clock {
+    background-color: #457792;
+    text-align: center; /* aligns the text to the center within the div */
+    font-size: 55px; /* makes the font size larger */
+    height: 100%; /* gives the text 100% height within the div */
+    padding: 25px; /* allows us to move the text within the div */
 }
