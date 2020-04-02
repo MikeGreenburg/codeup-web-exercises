@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
     <title>Styled Map Selection</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/weather_map.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-
-</head>
-=======
     <meta charset="UTF-8">
     <title>Weather Map</title>
-</head>
-<link rel="stylesheet" href="css/weather_map.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    <link rel="stylesheet" href="css/weather_map.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-
->>>>>>> 114a0adf74dd5ae6e21fcb80eae159986a1c5f33
+</head>
 <body>
 <!----------------------------------Jumbotron Area------------------------------------->
 <div class="jumbotron jumbotron-fluid" id="main-jumbotron">
     <div>
-<<<<<<< HEAD
-        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+<!--        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">-->
             <!--                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"-->
             <!--                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
             <!--                    <span class="navbar-toggler-icon">Weather Cast</span>-->
             <!--                </button>-->
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto text-focus-in">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"  href="#">7-day Forecast</a>
-=======
+<!--            <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--                <ul class="navbar-nav mr-auto text-focus-in">-->
+<!--                    <li class="nav-item active">-->
+<!--                        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link"  href="#">7-day Forecast</a>-->
         <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
             <!--        <a class="navbar-brand" href="#">Navbar</a>-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -55,15 +47,13 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Todays Weather</a>
->>>>>>> 114a0adf74dd5ae6e21fcb80eae159986a1c5f33
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.weather.gov/" target="_blank">Meteorology</a>
                     </li><li class="nav-item">
                     <a class="nav-link" href="https://www.noaa.gov/education" target="_blank">Learn More</a>
-                </li>
+                    </li>
                 </ul>
-<<<<<<< HEAD
                 <h3 class="focus-in-expand-fwd">Weather Forcast</h3>
                 <section class="container2" id="weather-data">
                     <div style="width: 100%; height: 100%">
@@ -489,95 +479,81 @@
 
 </body>
 </html>
-=======
-            </div>
-        </nav>
-    </div>
-    <div class="container" id="jumbotron-container">
+<!--            </div>-->
+<!--        </nav>-->
+<!--    </div>-->
+<!--    <div class="container" id="jumbotron-container">-->
 
-    </div>
-</div>
-<div class="mapInfo">
-    <div id='map'></div>
-    <div id="weather-right-now">
-        <!--San antonio coordinates-->
-        <!--    latitude-->
-        <!--    29.424349-->
-        <!--    longitude-->
-        <!--    -98.491142-->
-        <form>
-            <label for="long">Longitude:</label>
-            <input type="text" name="long" id="long" placeholder="Enter the longitude here">
-            <label for="lat">Latitude:</label>
-            <input type="text" name="lat" id="lat" placeholder="Enter latitude here">
-            <button type="submit">Submit Coordinates</button>
-        </form>
-        <h2>Current Weather in <span class="city">San Antonio</span></h2>
-    </div>
-    <div id="weather-forecast">
-        <h3>Forecast</h3>
-    </div>
-</div>
-<script src="js/keys.js"></script>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script>
-    var lati = 29.424;
-    var longi = -98.4936;
-    $.ajax("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/"+ darkSkyKey +"/"+ lati +"," + longi).done(function (data) {
-        // $.ajax("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/"+ darkSkyKey +"/29.424349,-98.491142").done(function (data) {
-        console.log(data);
-        console.log(new Date(data.currently.time * 1000));
-        // Display the current "real time" temperature information to the weather-details div
-        $('#weather-right-now').append("Temperature:  " + data.currently.temperature + '<br>' +
-            "Current Weather:  " + data.currently.summary + '<br>' +
-            "Humidity:  "  +  data.currently.humidity + '<br>' +
-            "Pressure:  " + data.currently.pressure + '<br>' +
-            "Current Time: " + new Date(data.currently.time * 1000));
-        // Display the current city by timezone label to the first h2 in body
-        $('.city').append(" " + data.timezone);
-        //    Display forecast for today
-        $('#weather-forecast').append('<p>' + "Summary:  " + data.daily.data[0].summary + '<br>' +
-            "Temperature Low:  " + data.daily.data[0].temperatureLow + '<br>' +
-            "Temperature High: " + data.daily.data[0].temperatureHigh + '<br>' +
-            "Humidity:  " + data.daily.data[0].humidity + '<br>' +
-            "Pressure:  " + data.daily.data[0].pressure + '</p>');
-        // Display forecast for tomorrow
-        $('#weather-forecast').append('<p>' + "Summary:  " + data.daily.data[1].summary + '<br>' +
-            "Temperature Low:  " + data.daily.data[1].temperatureLow + '<br>' +
-            "Temperature High: " + data.daily.data[1].temperatureHigh + '<br>' +
-            "Humidity:  " + data.daily.data[1].humidity + '<br>' +
-            "Pressure:  " + data.daily.data[1].pressure + '</p>');
-        // Display forecast for day after tomorrow
-        $('#weather-forecast').append('<p>' + "Summary:  " + data.daily.data[2].summary + '<br>' +
-            "Temperature Low:  " + data.daily.data[2].temperatureLow + '<br>' +
-            "Temperature High: " + data.daily.data[2].temperatureHigh + '<br>' +
-            "Humidity:  " + data.daily.data[2].humidity + '<br>' +
-            "Pressure:  " + data.daily.data[2].pressure +'</p>');
-    });
-</script>
+<!--    </div>-->
+<!--</div>-->
+<!--<div class="mapInfo">-->
+<!--    <div id='map'></div>-->
+<!--    <div id="weather-right-now">-->
+<!--        &lt;!&ndash;San antonio coordinates&ndash;&gt;-->
+<!--        &lt;!&ndash;    latitude&ndash;&gt;-->
+<!--        &lt;!&ndash;    29.424349&ndash;&gt;-->
+<!--        &lt;!&ndash;    longitude&ndash;&gt;-->
+<!--        &lt;!&ndash;    -98.491142&ndash;&gt;-->
+<!--        <form>-->
+<!--            <label for="long">Longitude:</label>-->
+<!--            <input type="text" name="long" id="long" placeholder="Enter the longitude here">-->
+<!--            <label for="lat">Latitude:</label>-->
+<!--            <input type="text" name="lat" id="lat" placeholder="Enter latitude here">-->
+<!--            <button type="submit">Submit Coordinates</button>-->
+<!--        </form>-->
+<!--        <h2>Current Weather in <span class="city">San Antonio</span></h2>-->
+<!--    </div>-->
+<!--    <div id="weather-forecast">-->
+<!--        <h3>Forecast</h3>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<script src="js/keys.js"></script>-->
+<!--<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>-->
+<!--<script>-->
+<!--    var lati = 29.424;-->
+<!--    var longi = -98.4936;-->
+<!--    $.ajax("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/"+ darkSkyKey +"/"+ lati +"," + longi).done(function (data) {-->
+<!--        // $.ajax("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/"+ darkSkyKey +"/29.424349,-98.491142").done(function (data) {-->
+<!--        console.log(data);-->
+<!--        console.log(new Date(data.currently.time * 1000));-->
+<!--        // Display the current "real time" temperature information to the weather-details div-->
+<!--        $('#weather-right-now').append("Temperature:  " + data.currently.temperature + '<br>' +-->
+<!--            "Current Weather:  " + data.currently.summary + '<br>' +-->
+<!--            "Humidity:  "  +  data.currently.humidity + '<br>' +-->
+<!--            "Pressure:  " + data.currently.pressure + '<br>' +-->
+<!--            "Current Time: " + new Date(data.currently.time * 1000));-->
+<!--        // Display the current city by timezone label to the first h2 in body-->
+<!--        $('.city').append(" " + data.timezone);-->
+<!--        //    Display forecast for today-->
+<!--        $('#weather-forecast').append('<p>' + "Summary:  " + data.daily.data[0].summary + '<br>' +-->
+<!--            "Temperature Low:  " + data.daily.data[0].temperatureLow + '<br>' +-->
+<!--            "Temperature High: " + data.daily.data[0].temperatureHigh + '<br>' +-->
+<!--            "Humidity:  " + data.daily.data[0].humidity + '<br>' +-->
+<!--            "Pressure:  " + data.daily.data[0].pressure + '</p>');-->
+<!--        // Display forecast for tomorrow-->
+<!--        $('#weather-forecast').append('<p>' + "Summary:  " + data.daily.data[1].summary + '<br>' +-->
+<!--            "Temperature Low:  " + data.daily.data[1].temperatureLow + '<br>' +-->
+<!--            "Temperature High: " + data.daily.data[1].temperatureHigh + '<br>' +-->
+<!--            "Humidity:  " + data.daily.data[1].humidity + '<br>' +-->
+<!--            "Pressure:  " + data.daily.data[1].pressure + '</p>');-->
+<!--        // Display forecast for day after tomorrow-->
+<!--        $('#weather-forecast').append('<p>' + "Summary:  " + data.daily.data[2].summary + '<br>' +-->
+<!--            "Temperature Low:  " + data.daily.data[2].temperatureLow + '<br>' +-->
+<!--            "Temperature High: " + data.daily.data[2].temperatureHigh + '<br>' +-->
+<!--            "Humidity:  " + data.daily.data[2].humidity + '<br>' +-->
+<!--            "Pressure:  " + data.daily.data[2].pressure +'</p>');-->
+<!--    });-->
+<!--</script>-->
 
-<!--------------------------------Jumbotron Area End----------------------------------->
-<!---------------- The HTML element that serves as the Mapbox container --------------->
+<!--&lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;Jumbotron Area End-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--&lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; The HTML element that serves as the Mapbox container -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
 
-    <script src="js/jquery-2.2.4.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
-    <script src="js/mapbox-geocoder-utils.js"></script>
-    <script src="js/keys.js"></script>
-    <script src="js/weather_map.js"></script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> 114a0adf74dd5ae6e21fcb80eae159986a1c5f33
+<!--    <script src="js/jquery-2.2.4.js"></script>-->
+<!--    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>-->
+<!--    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>-->
+<!--    <script src="js/mapbox-geocoder-utils.js"></script>-->
+<!--    <script src="js/keys.js"></script>-->
+<!--    <script src="js/weather_map.js"></script>-->
+<!--</body>-->
+<!--</html>-->
 
